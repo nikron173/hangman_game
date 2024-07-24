@@ -13,10 +13,10 @@ def make_word() -> str:
                 i += 1
             return file.readline().strip().lower()
     except FileNotFoundError:
-        print("Файл summary.txt не найден.")
+        print('Error: Файл summary.txt не найден.')
         sys.exit(1)
     except IOError:
-        print('Ошибка чтения файла summary.txt')
+        print('Error: Ошибка чтения файла summary.txt')
         sys.exit(1)
 
 
